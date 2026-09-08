@@ -1,2 +1,5 @@
 Banana 
 Manga
+arroz 
+feijão 
+abacaxi
