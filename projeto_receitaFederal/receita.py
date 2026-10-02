@@ -1,4 +1,3 @@
-#receita.py encapsula toda comunicação com o MySql 
 
 # -*- coding: utf-8 -*-
 import os
