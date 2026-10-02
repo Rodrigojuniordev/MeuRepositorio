@@ -1,3 +1,5 @@
+#Encapsula toda a comunicação com o MySQL.
+
 # -*- coding: utf-8 -*-
 from sqlalchemy import create_engine, text
 from config import DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME
