@@ -1,4 +1,5 @@
 #Encapsula toda a comunicação com o MySQL.
+#A Receita Federal não garante que 100% dos estabelecimentos têm empresa correspondente. Podem existir
 
 # -*- coding: utf-8 -*-
 from sqlalchemy import create_engine, text
@@ -27,13 +28,13 @@ class Banco:
 
     def testar(self):
         """Testa se o banco esta acessivel."""
-        return self.executar("SELECT 1")
+        return self.executar("SELECT 1") # Se retornar True o banco esta acessível
 
     def configurar_sessao(self):
-        """Ajusta a sessao para importacao em massa."""
-        self.executar("SET SESSION sql_mode = ''")
-        self.executar("SET SESSION unique_checks = 0")
-        self.executar("SET SESSION foreign_key_checks = 0")
+        """Ajusta a sessao para importacao em massa.""" 
+        self.executar("SET SESSION sql_mode = ''") # Modo restritivo (rejeita datas inválidas)
+        self.executar("SET SESSION unique_checks = 0") # Acelera o Load Data 
+        self.executar("SET SESSION foreign_key_checks = 0") # Não tem FK, mas evita checagem descnecessária
 
     def restaurar_sessao(self):
         """Restaura as verificacoes apos a carga."""
