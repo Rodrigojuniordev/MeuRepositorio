@@ -1,7 +1,8 @@
+# É um módulo que carrega o .env e expõe constantes para todos os outros arquivos. Funciona como um "painel de controle" do projeto.
+
 # -*- coding: utf-8 -*-
 import os
-from dotenv import load_dotenv
-
+from dotenv import load_dotenv # Lê o arquivo .env e coloca cada variável no ambiente.
 load_dotenv()
 
 # Pastas
