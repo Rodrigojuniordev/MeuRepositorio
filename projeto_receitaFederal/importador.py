@@ -1,3 +1,5 @@
+#Encapsula a carga dos dados no MySQL. Duas etapas: LOAD DATA para staging + consolidação para tabelas finais.
+
 # -*- coding: utf-8 -*-
 from config import AUXILIARES, TABELAS
 
