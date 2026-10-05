@@ -1,3 +1,7 @@
+#Encapsula tudo que envolve acessar o WebDAV da Receita Federal: detectar o mês, listar arquivos, consultar ETag, baixar e extrair.
+
+
+
 
 # -*- coding: utf-8 -*-
 import os
