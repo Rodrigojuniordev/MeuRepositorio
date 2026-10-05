@@ -1,3 +1,5 @@
+#O ponto de entrada que amarra tudo.
+
 # -*- coding: utf-8 -*-
 import os
 
