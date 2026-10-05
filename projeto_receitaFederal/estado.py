@@ -1,3 +1,5 @@
+#Gerencia os hashes por competência. É a "memória" do sistema.
+
 # -*- coding: utf-8 -*-
 import os
 import json
