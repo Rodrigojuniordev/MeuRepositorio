@@ -7,7 +7,7 @@ from config import DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME
 
 
 class Banco:
-    """Wrapper de conexao com o MySQL."""
+    """Gerenciador de conexao com o MySQL."""
 
     def __init__(self):
         url = (
